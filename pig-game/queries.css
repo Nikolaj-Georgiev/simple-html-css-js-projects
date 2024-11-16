@@ -1,0 +1,83 @@
+@media (max-width: 65em) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    max-width: 80rem;
+    max-height: 50rem;
+  }
+
+  .player {
+    padding: 7rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn--new {
+    top: 2rem;
+  }
+
+  .btn--roll {
+    top: 36rem;
+  }
+  .btn--hold {
+    top: 42.5rem;
+  }
+}
+
+@media (max-width: 38em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .grid {
+    display: grid;
+    row-gap: 9.6rem;
+    /* column-gap: 6.4rem; */
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player {
+    flex: 50%;
+    padding: 4rem 2rem 4rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  #name--0 {
+    align-self: start;
+    margin-left: 4rem;
+  }
+
+  #name--1 {
+    align-self: end;
+    margin-right: 4rem;
+  }
+
+  .player--0 .current {
+    width: 50%;
+    padding: 2rem;
+    align-self: start;
+    margin-left: 4rem;
+  }
+  .player--1 .current {
+    width: 50%;
+    padding: 2rem;
+    align-self: end;
+    margin-right: 4rem;
+  }
+
+  .current-label {
+    font-size: 1.6rem;
+  }
+}

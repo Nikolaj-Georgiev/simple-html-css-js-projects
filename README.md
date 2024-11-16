@@ -46,16 +46,19 @@ An updated version of the Space Invaders game, designed to be played on any devi
 
 ### [Winters](https://winters-ngn.netlify.app)
 A home page designed for a winter tours company.
-
 **Tech Stack:**
 - Built using advanced CSS techniques with SCSS.
 
 ### [Omnifood](https://omnifood-ng.netlify.app)
 A home page for a food delivery company.
-
 **Tech Stack:**
 - Built with pure CSS and a few lines of JavaScript.
-
+  
+### [Dance Tour](https://dance-tour-nikolaj-georgiev.netlify.app/)
+A home page for a dance lesons company.
+**Tech Stack:**
+- Built with HTML, CSS and JavaScript.
+  
 ## Notes
 
 - All projects are hosted on Netlify for easy access.

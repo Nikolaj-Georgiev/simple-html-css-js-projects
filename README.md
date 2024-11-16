@@ -66,6 +66,12 @@ A home page for a dance lesons company.
 **Tech Stack:**
 - Built with HTML, CSS and JavaScript.
   
+### [Axit Home Page](https://axit-home-page-ng.netlify.app/)
+A home page for Axit company.
+
+**Tech Stack:**
+- Built with HTML, CSS, SCSS and JavaScript.
+  
 ## Notes
 
 - All projects are hosted on Netlify for easy access.

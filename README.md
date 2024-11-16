@@ -9,7 +9,7 @@ A simple dice roll simulator that generates random dice rolls with a click of a 
 **Tech Stack:**
 - Built with pure CSS and JavaScript.
 
-### [Pig Game](https://pig-game-gnikolay.netlify.app/))
+### [Pig Game](https://pig-game-gnikolay.netlify.app/)
 Pig Game is a two-player dice game where the goal is to score 100 points first. Players take turns rolling the dice, adding the rolled value to their current score, and can either hold to save their score or risk rolling again. Rolling a 1 resets the current score and ends the turn. Simple, fun, and strategic
 **Tech Stack:**
 - Built with pure CSS and JavaScript.

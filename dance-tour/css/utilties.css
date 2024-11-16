@@ -1,0 +1,10 @@
+/* STICKY nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  width: 144rem;
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}

@@ -1,0 +1,44 @@
+/* ABOUT section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background-color-main);
+  gap: 10rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info--1 {
+  padding-right: 8rem;
+}
+.about-info--2 {
+  padding-left: 8rem;
+}
+
+.about-info--title {
+  align-self: flex-start;
+}
+
+.about-info--text {
+  font-size: 30px;
+}
+
+.about-btn {
+  align-self: flex-start;
+  background-color: var(--background-color-secondary);
+  color: var(--text-color);
+}

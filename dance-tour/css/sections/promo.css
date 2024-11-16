@@ -1,0 +1,58 @@
+/* PROMO section */
+.promo {
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--background-color-secondary);
+}
+
+.promo-text {
+  max-width: 88rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.promo-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.promo-card {
+  margin-top: 8rem;
+  background-color: var(--background-color-main);
+  max-width: 37.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.promo-card--icon {
+  margin-top: 6.5rem;
+}
+
+.promo-card--title {
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.promo-card--text {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.promo-btn {
+  background-color: var(--background-color-secondary);
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}

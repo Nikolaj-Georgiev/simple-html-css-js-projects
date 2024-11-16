@@ -1,0 +1,47 @@
+/* QUOTE section */
+.quote {
+  width: 144rem;
+  height: 97.4rem;
+  background-image: url('../../assets/images/quote-img.png');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-main);
+  mix-blend-mode: multiply;
+  z-index: 8;
+}
+
+.quote-content {
+  z-index: 11;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quote-text {
+  max-width: 103rem;
+  text-align: center;
+  font-size: 5rem;
+  z-index: 20;
+}
+
+.quote-title {
+  font-size: 5.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 20;
+  margin: 0;
+}

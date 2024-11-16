@@ -1,0 +1,398 @@
+@media screen and (max-width: 1439px) {
+  .app-wrapper {
+    width: 100%;
+  }
+  .sticky {
+    width: 100%;
+  }
+  .hero {
+    padding: 4rem 4rem 6rem 8rem;
+  }
+  .product {
+    padding: 8rem 4rem 8rem 4rem;
+  }
+  .product-cards {
+    gap: 5rem;
+  }
+  .product-card {
+    max-width: 34rem;
+  }
+  .product-card--img {
+    padding: 0.2rem;
+    max-width: 34rem;
+  }
+  .promo-cards {
+    gap: 5rem;
+  }
+  .button {
+    width: 27rem;
+  }
+  .about-card {
+    gap: 5rem;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .about-info--1 {
+    padding-right: 4rem;
+  }
+  .about-info--2 {
+    padding-right: 6rem;
+  }
+  .statistics {
+    padding: 15rem 6rem 15rem 6rem;
+  }
+  .statistics-cards {
+    gap: 15rem;
+  }
+
+  .quote {
+    max-width: 100%;
+    height: 90rem;
+  }
+  .subscribe {
+    padding: 8rem 8rem 14rem 8rem;
+  }
+
+  .footer {
+    gap: 2rem;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .product-cards {
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+
+  .product-card {
+    margin-top: 4rem;
+    max-width: 37rem;
+  }
+
+  .product-card--img {
+    max-width: 37rem;
+    padding: 0;
+  }
+
+  .product-card--3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-info--1 {
+    padding-left: 3rem;
+  }
+
+  .about-info--title {
+    font-size: 6rem;
+  }
+  .about-info--text {
+    font-size: 24px;
+  }
+  .statistics {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+  .statistics-cards {
+    gap: 10rem;
+    margin-top: 0;
+  }
+  .quote {
+    height: 75rem;
+  }
+  .quote-text {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  .footer {
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .footer-text {
+    font-size: 2rem;
+    max-width: 47rem;
+  }
+  .button {
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    justify-content: space-evenly;
+  }
+  .header-logo {
+    margin-right: -5rem;
+    width: 13rem;
+  }
+  .hero {
+    padding: 4rem;
+  }
+  .hero-heading {
+    font-size: 8.5rem;
+  }
+  .hero-text {
+    max-width: 60rem;
+    font-size: 2.6rem;
+  }
+  .promo-cards {
+    flex-wrap: wrap;
+  }
+  .promo-card--3 {
+    margin-top: 4rem;
+  }
+  .about-info--2 {
+    padding-right: 2rem;
+  }
+  .about-info--title {
+    font-size: 6rem;
+    max-width: 40rem;
+  }
+  .about-info--1 {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .footer-text {
+    max-width: 40rem;
+  }
+  .link,
+  .link:active {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .link:hover,
+  .link:visited {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .header-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color-secondary);
+    position: fixed;
+    top: -100%;
+    left: 0;
+    transition: top 0.3s ease;
+    z-index: 1000;
+  }
+
+  .header-ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+
+  .menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+
+  .menu-toggle:checked ~ .header-ul {
+    top: 0;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .sticky {
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header-link:link,
+  .header-link:visited {
+    font-size: 5.5rem;
+  }
+  .product-card {
+    margin-top: 0;
+  }
+  .product-text {
+    margin-bottom: 8rem;
+  }
+  .promo-card {
+    margin-top: 4rem;
+  }
+  .about-card {
+    gap: 3rem;
+  }
+  .about-info--title {
+    line-height: 1.2;
+  }
+  .about-info--text {
+    font-size: 20px;
+  }
+  .about-info--2 {
+    padding-left: 3rem;
+  }
+
+  .statistics-title {
+    font-size: 5.5rem;
+  }
+  .statistics-text {
+    max-width: 65rem;
+    font-size: 2.4rem;
+  }
+  .statistics-cards {
+    gap: 5rem;
+  }
+  .statistics-info--animation p {
+    font-size: 4rem;
+  }
+  .statistics-info > p {
+    font-size: 2rem;
+  }
+
+  .header-ul {
+    gap: 0;
+  }
+  .footer-text {
+    max-width: 22rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .about-info--1 {
+    background: linear-gradient(
+        to bottom,
+        rgba(232, 99, 28, 0.45),
+        rgba(232, 99, 28, 0.1)
+      ),
+      url('../assets/images/about-img-1.png');
+    background-size: cover;
+  }
+
+  .about-info--2 {
+    background: linear-gradient(
+        to bottom,
+        rgba(232, 99, 28, 0.45),
+        rgba(232, 99, 28, 0.1)
+      ),
+      url('../assets/images/about-img-2.png');
+    background-size: cover;
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 7rem;
+  }
+
+  .about-info--title {
+    align-self: center;
+  }
+
+  .about-btn {
+    margin-top: 6rem;
+    align-self: center;
+    background-color: var(--background-color-main);
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .statistics-cards {
+    flex-direction: column;
+  }
+  .quote {
+    max-height: 50rem;
+    background-position: center;
+  }
+  .quote-text {
+    font-size: 2.4rem;
+    max-width: 34rem;
+  }
+  .quote-title {
+    font-size: 4rem;
+  }
+  .subscribe {
+    padding: 5rem 5rem 8rem 5rem;
+  }
+  .subscribe-title {
+    font-size: 5.5rem;
+  }
+  .subscribe-text {
+    font-size: 2rem;
+  }
+  .form {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 30rem;
+    gap: 2rem;
+  }
+  .form-input {
+    font-size: 3.1rem;
+    margin-left: 0rem;
+  }
+
+  .form-btn {
+    font-size: 2.5rem;
+    flex-grow: 1;
+    border-radius: 4px;
+    width: 22rem;
+    height: 5rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer-icon img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header-logo {
+    width: 10rem;
+  }
+  .header-icon {
+    font-size: 2.3rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .menu-icon {
+    width: 25px;
+    height: 20px;
+    top: 1.2rem;
+    right: -1.5rem;
+  }
+}

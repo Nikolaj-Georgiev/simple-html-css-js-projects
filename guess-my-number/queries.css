@@ -1,0 +1,32 @@
+@media (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
+
+  h1 {
+    line-height: 1.6;
+  }
+
+  main {
+    height: 55vh;
+    flex-direction: column;
+  }
+
+  .guess {
+    padding: 3rem;
+    width: 20rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 15rem;
+  }
+
+  .right {
+    margin-top: 5rem;
+    width: 52rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -7,17 +7,22 @@ Welcome to my repository where I collect simple projects that I have created to 
 ### [Roll Dice Simulator](https://dice-roll-sim.netlify.app)
 A simple dice roll simulator that generates random dice rolls with a click of a button.
 **Tech Stack:**
-- Built with pure CSS and JavaScript.
+- Built with HTML, CSS and JavaScript.
 
 ### [Pig Game](https://pig-game-gnikolay.netlify.app/)
 Pig Game is a two-player dice game where the goal is to score 100 points first. Players take turns rolling the dice, adding the rolled value to their current score, and can either hold to save their score or risk rolling again. Rolling a 1 resets the current score and ends the turn. Simple, fun, and strategic
 **Tech Stack:**
-- Built with pure CSS and JavaScript.
+- Built with HTML, CSS and JavaScript.
   
 ### [Guess My Number](https://guess-my-number-gnikolay.netlify.app/)
 Guess My Number is a simple number-guessing game where the player tries to guess a randomly generated number between 1 and 20. The game provides feedback if the guess is too high or low. The player wins by guessing the correct number, with the goal of doing so in the fewest attempts possible. Fun and challenging!
 **Tech Stack:**
-- Built with pure CSS and JavaScript.
+- Built with HTML, CSS and JavaScript.
+  
+### [Modal](https://gnikolay-modal.netlify.app/)
+Modal is a project showcasing how to create and manage a popup modal window using HTML, CSS, and JavaScript. The modal appears when triggered (e.g., by a button) and can be closed by clicking a close button or outside the modal.
+**Tech Stack:**
+- Built with HTML, CSS and JavaScript.
 
 ### [Space Invaders](https://space-invaders-basic.netlify.app)
 A basic version of the classic Space Invaders game.

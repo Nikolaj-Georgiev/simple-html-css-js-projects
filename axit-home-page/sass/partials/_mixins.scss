@@ -1,0 +1,76 @@
+// Media queries mixin
+@mixin respond($breakpoint, $type: max) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  @if $type == max {
+    @media (max-width: #{$breakpoint-value}) {
+      @content;
+    }
+  } @else if $type == min {
+    @media (min-width: #{$breakpoint-value}) {
+      @content;
+    }
+  }
+}
+
+// Responsive grid mixin
+@mixin responsive-grid-custom(
+  $large-columns: null,
+  $laptop-columns: null,
+  $tablet-columns: null,
+  $phone-columns: null,
+  $large-rows: null,
+  $laptop-rows: null,
+  $tablet-rows: null,
+  $phone-rows: null
+) {
+  @if $large-columns or $large-rows {
+    @include respond(large, min) {
+      @if $large-columns {
+        grid-template-columns: $large-columns;
+      }
+      @if $large-rows {
+        grid-template-rows: $large-rows;
+      }
+    }
+  }
+
+  @if $laptop-columns or $laptop-rows {
+    @include respond(laptop) {
+      @if $laptop-columns {
+        grid-template-columns: $laptop-columns;
+      }
+      @if $laptop-rows {
+        grid-template-rows: $laptop-rows;
+      }
+    }
+  }
+
+  @if $tablet-columns or $tablet-rows {
+    @include respond(tablet) {
+      @if $tablet-columns {
+        grid-template-columns: $tablet-columns;
+      }
+      @if $tablet-rows {
+        grid-template-rows: $tablet-rows;
+      }
+    }
+  }
+
+  @if $phone-columns or $phone-rows {
+    @include respond(phone) {
+      @if $phone-columns {
+        grid-template-columns: $phone-columns;
+      }
+      @if $phone-rows {
+        grid-template-rows: $phone-rows;
+      }
+    }
+  }
+}
+
+@mixin max-width-custom($breakpoint) {
+  @include respond($breakpoint) {
+    max-width: map-get($breakpoints, $breakpoint);
+  }
+}

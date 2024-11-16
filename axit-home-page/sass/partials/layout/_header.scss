@@ -1,0 +1,221 @@
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  z-index: 99;
+  width: 140rem;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-black;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 14rem) 1fr minmax(
+      min-content,
+      14rem
+    );
+  @include responsive-grid-custom(
+    null,
+    minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+    minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+    minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+    null,
+    null,
+    null
+  );
+
+  @include respond(desktop) {
+    @include max-width-custom(desktop);
+  }
+
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+  }
+}
+
+.navbar {
+  width: 100%;
+  grid-column: 2 / 3;
+  max-height: 7.2rem;
+  display: flex;
+  padding: 2.1rem 15rem;
+  justify-content: space-between;
+
+  @include respond(tablet) {
+    .menu-icon {
+      display: flex;
+      z-index: 1000;
+      height: fit-content;
+    }
+
+    .navbar {
+      &__links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        gap: 8rem;
+        justify-content: center;
+      }
+      &__link,
+      &__link:link,
+      &__link:active {
+        font-size: $font-huge;
+        text-transform: uppercase;
+        font-family: $font-stack-headings;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+
+    .menu-toggle:checked + .menu-icon + .navbar__links {
+      display: flex;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(45deg);
+      position: relative;
+      top: 1rem;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1.5rem;
+    }
+  }
+
+  @include respond(phone) {
+    .menu-icon {
+      span {
+        height: 2px;
+        width: 20px;
+        margin: 2px;
+      }
+    }
+
+    .navbar {
+      &__links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        gap: 8rem;
+        justify-content: center;
+      }
+      &__link,
+      &__link:link,
+      &__link:active {
+        font-size: $font-huge;
+        text-transform: uppercase;
+        font-family: $font-stack-headings;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+
+    .menu-toggle:checked + .menu-icon + .navbar__links {
+      display: flex;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(45deg);
+      position: relative;
+      top: 1rem;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1.5rem;
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 4.6rem;
+    align-items: center;
+    list-style: none;
+    transition: all 0.2s;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:active {
+    color: $color-white;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.69;
+  }
+
+  &__link:hover,
+  &__link:visited {
+    opacity: 0.89;
+    text-decoration: underline;
+  }
+
+  &__logo {
+    &--img {
+      max-width: 7.9rem;
+      max-height: 2.7rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    height: 2px;
+    width: 25px;
+    background: $color-white;
+    margin: 4px;
+    transition: 0.3s;
+  }
+}
+
+.header.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7.1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba($color-black, $alpha: 0.6);
+  z-index: 9;
+  box-shadow: 0 1.2rem 3.2rem rgba($color-orange-light, $alpha: 0.4);
+}

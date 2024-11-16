@@ -1,0 +1,48 @@
+.button {
+  border: none;
+  padding: 1rem 3rem;
+  font-size: $font-button;
+  color: $color-white;
+  font-weight: 600;
+  font-family: $font-stack-main;
+  transition: all 0.3s;
+
+  &--main {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    &:hover {
+      background-color: $color-white;
+      color: $color-grey-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-orange-dark;
+    &:hover {
+      background-color: $color-orange-light;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.heading {
+  font-size: $font-huge;
+  line-height: $line-height-heading;
+  font-family: $font-stack-headings;
+}
+
+.heading-4 {
+  margin: 0;
+  padding: 0;
+  font-size: $font-big;
+  font-weight: 700;
+  font-family: $font-stack-main;
+}
+
+.divider {
+  width: 6.8rem;
+  height: 0.22rem;
+}

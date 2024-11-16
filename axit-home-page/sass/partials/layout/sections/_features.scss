@@ -1,0 +1,224 @@
+.features {
+  background-color: $color-background-primary;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: minmax(min-content, 14rem) minmax(min-content, 112rem) minmax(
+      min-content,
+      14rem
+    );
+  grid-template-rows: auto auto auto;
+
+  &__panel {
+    grid-column: 2 / 3;
+
+    &-1 {
+      grid-row: 1 / 2;
+      height: 59.6rem;
+      display: grid;
+      grid-auto-flow: column;
+      &-tabs {
+        justify-self: center;
+        align-self: center;
+      }
+
+      &-tab {
+        align-self: center;
+        width: 11.4rem;
+        height: 11.4rem;
+        font-size: $font-button;
+        line-height: $line-height-standard;
+        color: $color-white;
+        font-weight: 700;
+        font-family: $font-stack-main;
+        background-color: $color-grey-dark;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $color-white;
+
+        &--1 {
+          background-color: $color-orange-dark;
+        }
+      }
+
+      &-info {
+        grid-column: 3 / 4;
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6rem;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        color: $color-text-primary;
+      }
+
+      &-heading {
+        color: $color-black;
+      }
+
+      &-img-container {
+        grid-column: 4 / 5;
+        align-self: center;
+      }
+    }
+
+    &-2 {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      background-color: $color-white;
+      height: 59.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 8rem;
+      gap: 18rem;
+
+      &-img-container {
+        align-self: center;
+      }
+
+      &-info {
+        max-width: 45.3rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+
+      &-heading {
+        color: $color-grey-darkest;
+      }
+
+      &-divider {
+        background-color: $color-orange-dark;
+      }
+
+      &-text {
+        color: $color-text-primary;
+      }
+
+      &-card {
+        color: $color-text-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+
+        i {
+          color: $color-orange-dark;
+          padding: 1.5rem;
+          border: 3px solid $color-orange-dark;
+          border-radius: 50%;
+          text-align: center;
+          font-size: $font-medium;
+        }
+
+        &-title {
+          font-size: $font-standard;
+          line-height: $line-height-title-card;
+          color: $color-grey-darkest;
+          font-weight: 600;
+          font-family: $font-stack-main;
+          text-align: start;
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+
+    &-3 {
+      grid-row: 3 / 4;
+      height: 59.6rem;
+      display: grid;
+      grid-auto-flow: column;
+
+      &-img-container {
+        grid-column: 3 / 4;
+        align-self: center;
+      }
+
+      &-info {
+        grid-column: 2 / 3;
+        align-self: center;
+        padding: 0 12.1rem 10rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+      }
+      &-heading {
+        color: $color-grey-darkest;
+      }
+
+      &-divider {
+        background-color: $color-orange-dark;
+      }
+
+      &-text {
+        color: $color-text-primary;
+        text-align: left;
+      }
+    }
+  }
+  @include responsive-grid-custom(
+    null,
+    minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+    minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+    minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+    null,
+    null,
+    null
+  );
+
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+    &__panel {
+      &-1 {
+        column-gap: 1rem;
+        &-info {
+          padding: 0 2rem;
+        }
+      }
+      &-2 {
+        padding: 0px 1rem;
+        gap: 2rem;
+      }
+
+      &-3 {
+        &-info {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+    &__panel {
+      &-image {
+        width: 100%;
+      }
+      &-1 {
+        &-info {
+          padding: 0;
+          gap: 5rem;
+        }
+      }
+      &-2 {
+        padding: 0 4rem;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+  }
+}

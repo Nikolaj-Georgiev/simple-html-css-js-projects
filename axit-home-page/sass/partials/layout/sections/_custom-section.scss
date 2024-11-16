@@ -1,0 +1,70 @@
+.custom-section {
+  background-color: $color-black;
+  grid-column: 1/-1;
+  grid-row: 7 / 8;
+  width: 140rem;
+  height: 32rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 14rem) minmax(min-content, 112rem) minmax(
+      min-content,
+      14rem
+    );
+  grid-template-rows: auto auto;
+  background-image: url('../../../../images/custom/u25_state0.png');
+  background-origin: border-box;
+  background-position: top;
+  background-size: cover;
+  opacity: 1.6;
+
+  &__info {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    padding-top: 5rem;
+
+    &-heading {
+      font-family: $font-stack-headings;
+      color: $color-white;
+      font-size: $font-huge;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &-divider {
+      background-color: $color-white;
+    }
+
+    &-text {
+      opacity: 0.8;
+      font-size: $font-medium;
+      color: $color-white;
+      font-weight: 300;
+      font-family: $font-stack-headings;
+    }
+  }
+  @include responsive-grid-custom(
+    null,
+    minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+    minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+    minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+    null,
+    null,
+    null
+  );
+
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+  }
+}

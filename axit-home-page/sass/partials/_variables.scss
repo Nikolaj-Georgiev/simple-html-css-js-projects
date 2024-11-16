@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// FONT FAMILIES
+$font-stack-main: 'Open Sans', sans-serif;
+$font-stack-headings: 'Raleway', sans-serif;
+
+// FONT SIZES
+$font-small: 1.2rem;
+$font-standard: 1.4rem;
+$font-button: 1.5rem;
+$font-medium: 1.6rem;
+$font-big: 2rem;
+$font-bigger: 2.3rem;
+$font-icons: 3.2rem;
+$font-biggest: 3rem;
+$font-huge: 3.6rem;
+
+$line-height-small: 1rem;
+$line-height-title-card: 1.7rem;
+$line-height-standard: 2rem;
+$line-height-medium: 2.3rem;
+$line-height-medium-pricing: 2.4rem;
+$line-height-big: 3rem;
+$line-height-heading: 4.3rem;
+
+// COLORS
+$color-background-primary: #f5f5f5;
+$color-text-primary: #86878b;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-darkest: #212121;
+$color-grey-dark: #333;
+$color-grey-light: #bdbdbd;
+
+$color-orange-light: #ff9b51;
+$color-orange-dark: #ff8b38;
+
+// Screen sizes
+
+// Breakpoints
+// 1em == 16px for the media queries. And 16px is the default browser font-size. If user goes for 20px then 1em == 20px etc.
+// $breakpoints: (
+//   'large': 112.5em,
+//   'laptop': 102.4rem,
+//   'tablet': 76.8rem,
+//   'phone': 42.5rem,
+// ); with my current design it is better to use pixels for the screen sizes.
+$breakpoints: (
+  'large': 1800px,
+  'desktop': 1400px,
+  'laptop': 1024px,
+  'tablet': 768px,
+  'phone': 425px,
+);

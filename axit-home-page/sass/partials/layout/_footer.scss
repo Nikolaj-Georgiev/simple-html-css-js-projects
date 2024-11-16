@@ -1,0 +1,40 @@
+.footer {
+  background-color: $color-black;
+  grid-row: 3 / 4;
+  grid-column: 1 /-1;
+  width: 140rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  &__text {
+    opacity: 0.502;
+    font-size: 12px;
+    color: $color-white;
+    font-weight: 400;
+    font-family: $font-stack-main;
+  }
+
+  @include respond(desktop) {
+    @include max-width-custom(desktop);
+  }
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+    &__icons {
+      width: 50%;
+    }
+  }
+}

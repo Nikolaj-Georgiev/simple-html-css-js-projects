@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba($color-orange-dark, 0.4);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(laptop) {
+    font-size: 56.25%; // 1rem = 9px; 9/16 == 56.25%;
+  }
+  @include respond(tablet) {
+    font-size: 50%; // 1rem = 8px; 8/16 == 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 31.25%; // 1rem = 5px; 5/16 == 31.25%;
+  }
+  @include respond(large, min) {
+    font-size: 75%; // 1rem = 12px; 12/16 == 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $font-stack-main;
+  font-size: $font-standard;
+  font-weight: 400;
+  line-height: $line-height-standard;
+  background-color: rgba(0, 0, 0, 0.38);
+  &.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: minmax(min-content, 7.2rem) 1fr minmax(
+        min-content,
+        8rem
+      );
+    grid-template-columns: minmax(min-content, 14rem) 1fr minmax(
+        min-content,
+        14rem
+      );
+    @include responsive-grid-custom(
+      null,
+      minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+      minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+      minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+      null,
+      null,
+      null
+    );
+
+    @include respond(desktop) {
+      @include max-width-custom(desktop);
+    }
+
+    @include respond(laptop) {
+      @include max-width-custom(laptop);
+    }
+
+    @include respond(tablet) {
+      @include max-width-custom(tablet);
+    }
+
+    @include respond(phone) {
+      @include max-width-custom(phone);
+    }
+  }
+}
+
+.main {
+  grid-row: 2 / 3;
+  grid-column: 1 /-1;
+  display: grid;
+  grid-template-columns: minmax(min-content, 14rem) 1fr minmax(
+      min-content,
+      14rem
+    );
+  grid-template-rows: repeat(8, auto);
+  @include responsive-grid-custom(
+    null,
+    minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+    minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+    minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+    null,
+    null,
+    null
+  );
+
+  @include respond(desktop) {
+    @include max-width-custom(desktop);
+  }
+
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+  }
+}
+
+::selection {
+  background-color: $color-orange-light;
+  color: $color-white;
+}

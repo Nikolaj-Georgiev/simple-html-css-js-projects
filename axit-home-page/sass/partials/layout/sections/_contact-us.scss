@@ -1,0 +1,132 @@
+.contact-us {
+  background-color: $color-background-primary;
+  grid-column: 1 / -1;
+  grid-row: 8 / 8;
+  background-color: $color-white;
+  height: 61.2rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 14rem) minmax(min-content, 112rem) minmax(
+      min-content,
+      14rem
+    );
+  grid-template-rows: auto auto;
+
+  &__info {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    padding-top: 5rem;
+
+    &-heading {
+      color: $color-grey-darkest;
+      line-height: $line-height-heading;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &-divider {
+      background-color: $color-orange-dark;
+    }
+
+    &-text {
+      color: $color-text-primary;
+    }
+  }
+
+  &__form {
+    &-container {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding-top: 3rem;
+    }
+
+    & {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 114rem;
+    }
+
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &-input {
+      border: none;
+      flex-grow: 1;
+      width: 53.1rem;
+      padding: 1rem 1rem;
+      font-size: $font-standard;
+      color: $color-grey-light;
+      font-weight: 400;
+      font-family: $font-stack-main;
+      filter: drop-shadow(0px 1px 0px rgba(0, 0, 1, 0.16));
+    }
+
+    &-textarea {
+      width: 53.1rem;
+      height: 16rem;
+      outline: none;
+      border: none;
+      filter: drop-shadow(0px 1px 0px rgba(0, 0, 1, 0.16));
+      font-size: $font-standard;
+      color: $color-grey-light;
+      font-weight: 400;
+      font-family: $font-stack-main;
+    }
+  }
+  @include responsive-grid-custom(
+    null,
+    minmax(min-content, 10rem) 1fr minmax(min-content, 10rem),
+    minmax(min-content, 8rem) 1fr minmax(min-content, 8rem),
+    minmax(min-content, 4rem) 1fr minmax(min-content, 4rem),
+    null,
+    null,
+    null
+  );
+
+  @include respond(desktop) {
+    @include max-width-custom(desktop);
+  }
+
+  @include respond(laptop) {
+    @include max-width-custom(laptop);
+    &__form {
+      width: 100%;
+      gap: 2rem;
+      &-inputs {
+        width: 59%;
+      }
+      &-textarea {
+        width: 40%;
+      }
+      &-input {
+        width: 100%;
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    @include max-width-custom(tablet);
+    &__form {
+      width: 90%;
+    }
+  }
+
+  @include respond(phone) {
+    @include max-width-custom(phone);
+  }
+}

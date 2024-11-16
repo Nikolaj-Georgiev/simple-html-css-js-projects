@@ -52,7 +52,7 @@ An updated version of the Space Invaders game, designed to be played on any devi
 A home page designed for a winter tours company.
 
 **Tech Stack:**
-- Built using advanced CSS techniques with SCSS.
+- Built using old school advanced CSS techniques with SCSS.
 
 ### [Omnifood](https://omnifood-ng.netlify.app)
 A home page for a food delivery company.

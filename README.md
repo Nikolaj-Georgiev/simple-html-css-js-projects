@@ -4,6 +4,22 @@ Welcome to my repository where I collect simple projects that I have created to 
 
 ## Projects
 
+### [Advertize](https://github.com/Nikolaj-Georgiev/simple-html-css-js-projects/tree/2e8da5c274c1d63c410e3d47f7d081d9041d5055/advertize)
+A script that replaces the current page content with an animated text display and records the animation into a downloadable video file.
+
+**Usage Instructions:**
+1. Clone the repository and navigate to the `advertize` folder.
+2. Include the script in your HTML file:
+   ```html
+   <script src="text-animation-with-recording.js"></script>
+   ```
+3. Alternatively, copy the script into the browser's developer tools console and run it.
+4. The animation starts automatically, replacing the page content.
+5. Use the stop button (`X`) to end the animation and download the video.
+
+**Tech Stack:**
+- Built with JavaScript and HTML5 Canvas API.
+
 ### [Roll Dice Simulator](https://dice-roll-sim.netlify.app)
 A simple dice roll simulator that generates random dice rolls with a click of a button.
 
